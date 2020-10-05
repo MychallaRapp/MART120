@@ -1,0 +1,10 @@
+<html>
+  <body>
+   <h1>Third Page</h1>
+   <link rel="stylesheet" type="text/css" href"mainstyle.css">
+   <p>Contact us</p>
+    <form action="thirdpage.html" type="Post">
+     First and last name: <input type="text" id="flname"><br>
+     <button id="mySubmit" type="submit">Submit</button>
+  </body>
+</html>
