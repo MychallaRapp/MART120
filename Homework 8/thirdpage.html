@@ -1,0 +1,67 @@
+<html><head></head><body>
+   <h1>Third Page</h1>
+     <link rel="stylesheet" type="text/css" href="mainstyle.css">
+     <script>
+       function checkForm()
+         {
+           var name;
+           name = document.getElementById("txtName").value;
+           if(name == "")
+            {
+             document.getElementById("txtName").style.backgroundColor = "red";
+             document.getElementById("txtName").focus();
+            }
+           else
+            {
+             document.getElementById("txtName").style.backgroundColor = "white";
+            }
+           var address;
+           address = document.getElementById("txtAddress").value;
+           if(address == "")
+            {
+             document.getElementById("txtAddress").style.backgroundColor = "red"
+             document.getElementById("txtAddress").focus();
+            }
+           else
+            {
+             document.getElementById("txtAddress").style.backgroundColor = "white";
+            }
+           var agreement;
+           agreement = document.getElementById("txtAgreement").value;
+           if(agreement == "")
+            {
+             document.getElementById("txtAgreement").style.backgroundColor = "red";
+             document.getElementById("txtAgreement").focus();
+            }
+           else
+            {
+             document.getElementById("txtAgreement").style.backgroundColor = "white";
+            }
+                     
+          }
+     </script>
+   <p>
+      <span class="redcolor">Contact us</span>
+    </p><span class="redcolor">
+     </span><span id="specificColor">
+     </span><table>
+    
+    <tr>
+     <td>First and Last Name</td>
+     <td><input type="text" id="txtName"></td>
+    
+    </tr>
+    <tr>
+     <td>E-mail Address</td>
+     <td><input type="text" id="txtAddress"></td>
+     </tr>
+     <tr>
+      <td>Do you accept the terms of agreement?</td>
+      <td><input type="text" id="txtAgreement"></td>
+      
+     </tr>
+     <tr>
+      <td colspan="3"><button id="btnSumbit" onclick="checkForm();">Submit</button></td>
+    </tr></tbody></table> 
+  
+</body></html>
